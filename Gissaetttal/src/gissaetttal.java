@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class gissaetttal {
 
-    public static void gissa (){ Scanner scanner = new Scanner(System.in);
+    public static void gissa () {
+        Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         boolean spelaigen = true;
 
@@ -15,7 +16,7 @@ public class gissaetttal {
             boolean gissaträtt = false;
 
             while (!gissaträtt) {
-                System.out.print("Din gissning: ");
+                System.out.print("Gissning" + " " + (antalförsök +1 ) + ":");
                 if (scanner.hasNextInt()){
                 int spelarensGissning = scanner.nextInt();
                 antalförsök++;
